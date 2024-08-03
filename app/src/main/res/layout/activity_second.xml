@@ -64,6 +64,15 @@
             android:textColor="@color/black"/>
 
         <TextView
+            android:id="@+id/item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item 4: "
+            android:textSize="20sp"
+            android:padding="20dp"
+            android:textColor="@color/black"/>
+
+        <TextView
             android:id="@+id/total"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,6 +80,15 @@
             android:textSize="20sp"
             android:padding="20dp"
             android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Proceed"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#ED0000"/>
     </LinearLayout>
 
 

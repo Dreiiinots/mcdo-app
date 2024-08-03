@@ -26,10 +26,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var sub_total3: TextView
 
 
-//    private lateinit var incrementbtn4: Button
-//    private lateinit var decrementbtn4: Button
-//    private lateinit var tv_quantity4: TextView
-//    private lateinit var sub_total4: TextView
+    private lateinit var incrementbtn4: Button
+    private lateinit var decrementbtn4: Button
+    private lateinit var tv_quantity4: TextView
+    private lateinit var sub_total4: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,13 +60,13 @@ class MainActivity : AppCompatActivity() {
         decrementbtn3 = findViewById(R.id.decrementbtn3)
         sub_total3 = findViewById(R.id.subtotal3)
 
-//        var quantity4 = 0
-//        val price4 = 129
-//        var subtotal4 = 0
-//        tv_quantity4 = findViewById(R.id.quantity4)
-//        incrementbtn4 = findViewById(R.id.incrementbtn4)
-//        decrementbtn4 = findViewById(R.id.decrementbtn4)
-//        sub_total4 = findViewById(R.id.subtotal4)
+        var quantity4 = 0
+        val price4 = 129
+        var subtotal4 = 0
+        tv_quantity4 = findViewById(R.id.quantity4)
+        incrementbtn4 = findViewById(R.id.incrementbtn4)
+        decrementbtn4 = findViewById(R.id.decrementbtn4)
+        sub_total4 = findViewById(R.id.subtotal4)
 
 
 
@@ -115,19 +115,19 @@ class MainActivity : AppCompatActivity() {
             sub_total3.text = subtotal3.toString()
         }
 
-//        incrementbtn4.setOnClickListener {
-//            quantity4++
-//            subtotal4 = quantity4 * price4
-//            tv_quantity4.text = quantity4.toString()
-//            sub_total4.text = subtotal4.toString()
-//        }
-//
-//        decrementbtn4.setOnClickListener {
-//            if (quantity4 > 0) quantity3--
-//            subtotal4 = quantity4 * price4
-//            tv_quantity4.text = quantity4.toString()
-//            sub_total4.text = subtotal4.toString()
-//        }
+        incrementbtn4.setOnClickListener {
+            quantity4++
+            subtotal4 = quantity4 * price4
+            tv_quantity4.text = quantity4.toString()
+            sub_total4.text = subtotal4.toString()
+        }
+
+        decrementbtn4.setOnClickListener {
+            if (quantity4 > 0) quantity3--
+            subtotal4 = quantity4 * price4
+            tv_quantity4.text = quantity4.toString()
+            sub_total4.text = subtotal4.toString()
+        }
 
         orderbtn.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
@@ -148,10 +148,10 @@ class MainActivity : AppCompatActivity() {
                 bundle.putInt("ITEM3_QUANTITY", quantity3)
                 bundle.putInt("ITEM3_SUBTOTAL", subtotal3)
             }
-//            if (quantity4 > 0) {
-//                bundle.putInt("ITEM4_QUANTITY", quantity4)
-//                bundle.putInt("ITEM4_SUBTOTAL", subtotal4)
-//            }
+            if (quantity4 > 0) {
+                bundle.putInt("ITEM4_QUANTITY", quantity4)
+                bundle.putInt("ITEM4_SUBTOTAL", subtotal4)
+            }
 
             // Put the Bundle into the Intent
             intent.putExtra("ITEM_DETAILS", bundle)
