@@ -271,7 +271,7 @@
                         android:layout_height="120dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="50dp"
-                        android:background="@drawable/chicken" />
+                        android:background="@drawable/ic_launcher_arrow" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -381,7 +381,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="@string/mcdo_chicken"
+                        android:text="@string/mcdo_flurry"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
@@ -457,7 +457,7 @@
                 <Button
                     android:id="@+id/orderbtn"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="70dp"
                     android:backgroundTint="#FF0000"
                     android:text="Order now"
                     android:textSize="15sp" />
